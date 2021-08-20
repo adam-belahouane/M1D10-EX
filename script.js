@@ -83,7 +83,7 @@ function longestArray(array1, array2) {
   const changeH1 = function (newH1) {
     const h1 = document.querySelector("h1")
     h1.innerText = newH1
-  };
+  }
 
   const createNewRow = function(){
       newRowNode = document.createElement("tr")
@@ -91,7 +91,7 @@ function longestArray(array1, array2) {
       table.appendChild(newRowNode)
       for (let i = 0; i < 5; i++) {
         const td = document.createElement("td")
-        td.innerText = i + 1;
+        td.innerText = i + 1
         newRowNode.appendChild(td)
       }
   }
