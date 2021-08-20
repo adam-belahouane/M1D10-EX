@@ -97,5 +97,29 @@ function longestArray(array1, array2) {
   }
 
   const addClassToRow = function(){
+      const allTrs = document.querySelectorAll("tr")
+      for(i=0; i < allTrs.length; i++){
+          allTrs[i].classList.add("test")
+      }
 
   }
+  const addRedBackgroundToLinks = function(){
+      const allLinks = document.querySelectorAll("a")
+      for(i=0; i < allLinks.length; i++){
+          allLinks[i].style.backgroundColor = "red"
+      }
+  }
+  window.onload = function () {
+    console.log("Page loaded")
+  }
+  const createNewListItems = function () {
+    const ul = document.querySelector("ul")
+    const li = document.createElement("li")
+    li.innerText = "hey"
+    ul.appendChild(li)
+  }
+  const emptyList = function () {
+    const ul = document.querySelector("ul")
+    ul.innerHTML = ""
+  }
+  
