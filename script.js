@@ -22,7 +22,7 @@ for (let str of array) {
     console.log(str)
   }
 
-let randomNumbers = [];
+let randomNumbers = []
 for (let i = 1; i <= 100; i++) {
   randomNumbers.push(Math.floor(Math.random() * 100 + 1))
 }
@@ -41,7 +41,7 @@ function getMaxMin(numbers) {
     return { max, min }
   }
   
-  console.log(getMaxMin(randomNumbers));
+  console.log(getMaxMin(randomNumbers))
 
   let arrayOfArrays = []
 
@@ -70,18 +70,18 @@ function longestArray(array1, array2) {
       sum2 += number
     }
   
-    return sum1 >= sum2 ? sum1 : sum2;
+    return sum1 >= sum2 ? sum1 : sum
   }
 
 
 
 
-  const container = document.getElementById("container");
+  const container = document.getElementById("container")
 
   const allTd = document.querySelectorAll("td")
 
   const changeH1 = function (newH1) {
-    const h1 = document.querySelector("h1");
+    const h1 = document.querySelector("h1")
     h1.innerText = newH1
   };
 
@@ -90,7 +90,7 @@ function longestArray(array1, array2) {
       table = document.querySelector("tbody")
       table.appendChild(newRowNode)
       for (let i = 0; i < 5; i++) {
-        const td = document.createElement("td");
+        const td = document.createElement("td")
         td.innerText = i + 1;
         newRowNode.appendChild(td)
       }
